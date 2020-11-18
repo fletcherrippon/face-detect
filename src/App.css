@@ -1,0 +1,17 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.video-container {
+  position: relative;
+}
+
+canvas {
+  top: 0;
+  left: 0;
+  position: absolute;
+}
