@@ -39,9 +39,9 @@ class App extends Component {
       canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height)
 
       faceapi.draw.drawFaceLandmarks(canvas, resizedDetections)
-      //faceapi.draw.drawDetections(canvas, resizedDetections)
-      //faceapi.draw.drawFaceExpressions(canvas, resizedDetections)
-    }, 100)
+      faceapi.draw.drawDetections(canvas, resizedDetections)
+      faceapi.draw.drawFaceExpressions(canvas, resizedDetections)
+    }, 80)
   }
 
   async componentDidMount() {
